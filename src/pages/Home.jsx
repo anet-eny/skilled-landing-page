@@ -1,7 +1,11 @@
+import Button from "../components/Button";
+
 export default function Home() {
   return (
     <main>
-      <h1 className="text-preset-4">Hello world</h1>
+      <Button variant="black">Get started</Button>
+      <Button variant="orange">Get started</Button>
+      <Button variant="purple">Get started</Button>
     </main>
   );
 }
