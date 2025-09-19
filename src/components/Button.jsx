@@ -1,6 +1,5 @@
 export default function Button({ children, variant = "link" }) {
-  const base =
-    "text-preset-6 md:text-preset-7 py-3 md:py-4 px-6 md:px-8 rounded-full";
+  const base = "text-preset-7 py-4 px-8 rounded-full";
   const variants = {
     link: "text-rose-400 hover:text-rose-300",
     black: "text-white bg-blue-950 hover:opacity-60",

@@ -1,12 +1,10 @@
 import Button from "../components/Button";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
     <main>
-      <Button>Get started</Button>
-      <Button variant="black">Get started</Button>
-      <Button variant="orange">Get started</Button>
-      <Button variant="purple">Get started</Button>
+      <Header />
     </main>
   );
 }
