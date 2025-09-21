@@ -9,7 +9,7 @@ import heroDesktop2x from "../assets/image-hero-desktop@2x.webp";
 export default function Hero() {
   return (
     <section className="px-5 py-16 md:px-11 lg:px-20 flex flex-col md:flex-row gap-12 md:gap-6 lg:gap-8">
-      <div>
+      <div className="flex-1">
         <h1 className="text-preset-1 mb-6">Maximize skill, minimize budget</h1>
         <p className="text-preset-5 text-gray-500 mb-10">
           Our modern courses across a range of in-demand skills will give you
@@ -17,22 +17,24 @@ export default function Hero() {
         </p>
         <Button variant="orange">Get started</Button>
       </div>
-      <picture>
-        <source
-          srcSet={`${heroDesktop} 1x, ${heroDesktop2x} 2x`}
-          media="(min-width: 64rem)"
-        />
-        <source
-          srcSet={`${heroTablet} 1x, ${heroTablet2x} 2x`}
-          media="(min-width: 48rem)"
-        />
-        <img
-          src={heroMobile}
-          srcSet={`${heroMobile} 1x, ${heroMobile2x} 2x`}
-          alt="Hero banner"
-          className="w-full h-auto"
-        />
-      </picture>
+      <div className="flex-1 relative">
+        <picture className="md:absolute md:-top-40 md:-right-60">
+          <source
+            srcSet={`${heroDesktop} 1x, ${heroDesktop2x} 2x`}
+            media="(min-width: 64rem)"
+          />
+          <source
+            srcSet={`${heroTablet} 1x, ${heroTablet2x} 2x`}
+            media="(min-width: 48rem)"
+          />
+          <img
+            src={heroMobile}
+            srcSet={`${heroMobile} 1x, ${heroMobile2x} 2x`}
+            alt="Hero banner"
+            className="w-full h-auto"
+          />
+        </picture>
+      </div>
     </section>
   );
 }
