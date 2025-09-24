@@ -4,9 +4,9 @@ export default function Button({ children, variant = "link" }) {
     link: "text-rose-400 hover:text-rose-300",
     black: "text-white bg-blue-950 hover:opacity-60",
     orange:
-      "text-white bg-gradient-to-b from-orange-500 to-fuchsia-500 hover:opacity-60",
+      "text-white bg-gradient-to-b from-gradient1-start to-gradient1-end hover:opacity-60",
     purple:
-      "text-white bg-gradient-to-b from-indigo-600 to-fuchsia-500 hover:opacity-60",
+      "text-white bg-gradient-to-b from-gradient2-start to-gradient2-end hover:opacity-60",
   };
 
   return <button className={`${base} ${variants[variant]}`}>{children}</button>;
