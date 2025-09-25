@@ -10,7 +10,9 @@ export default function Hero() {
   return (
     <section className="px-5 py-16 md:px-11 lg:px-20 flex flex-col md:flex-row gap-12 md:gap-6 lg:gap-8">
       <div className="flex-1">
-        <h1 className="text-preset-1 mb-6">Maximize skill, minimize budget</h1>
+        <h1 className="text-preset-2 lg:text-preset-1 mb-6">
+          Maximize skill, minimize budget
+        </h1>
         <p className="text-preset-5 text-gray-500 mb-10">
           Our modern courses across a range of in-demand skills will give you
           the knowledge you need to live the life you want.
