@@ -8,8 +8,8 @@ import heroDesktop2x from "../assets/image-hero-desktop@2x.webp";
 
 export default function Hero() {
   return (
-    <section className="px-5 py-16 md:px-11 lg:px-20 flex flex-col md:flex-row gap-12 md:gap-6 lg:gap-8">
-      <div className="flex-1">
+    <section className="py-16 md:px-11 lg:px-20 flex flex-col md:flex-row gap-12 md:gap-6 lg:gap-8">
+      <div className="flex-1 px-5">
         <h1 className="text-preset-2 lg:text-preset-1 mb-6">
           Maximize skill, minimize budget
         </h1>
@@ -20,7 +20,7 @@ export default function Hero() {
         <Button variant="orange">Get started</Button>
       </div>
       <div className="flex-1 relative">
-        <picture className="md:absolute md:-top-40 md:-right-60 md:pointer-events-none">
+        <picture className="md:absolute md:-top-40 md:-right-60 md:max-w-xl lg:max-w-none md:pointer-events-none">
           <source
             srcSet={`${heroDesktop} 1x, ${heroDesktop2x} 2x`}
             media="(min-width: 64rem)"
