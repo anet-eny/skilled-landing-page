@@ -20,7 +20,7 @@ export default function Hero() {
         <Button variant="orange">Get started</Button>
       </div>
       <div className="flex-1 relative">
-        <picture className="md:absolute md:-top-40 md:-right-60">
+        <picture className="md:absolute md:-top-40 md:-right-60 md:pointer-events-none">
           <source
             srcSet={`${heroDesktop} 1x, ${heroDesktop2x} 2x`}
             media="(min-width: 64rem)"
