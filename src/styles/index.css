@@ -12,6 +12,8 @@
   --color-gradient1-end: oklch(0.6452 0.2488 348.66);
   --color-gradient2-start: oklch(0.5466 0.2514 272.27);
   --color-gradient2-end: oklch(0.6452 0.2488 348.66);
+  --color-gradient3-start: oklch(1 0 0);
+  --color-gradient3-end: oklch(0.9615 0.0187 282.77);
 
   /* TEXT PRESETS */
 
@@ -84,4 +86,10 @@
   font-size: var(--text-preset-7);
   line-height: var(--text-preset-7--line-height);
   font-weight: var(--text-preset-7--font-weight);
+}
+
+@layer base {
+  body {
+    @apply bg-gradient-to-b from-gradient3-start to-gradient3-end;
+  }
 }
