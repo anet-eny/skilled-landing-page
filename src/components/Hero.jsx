@@ -9,7 +9,7 @@ import heroDesktop2x from "../assets/image-hero-desktop@2x.webp";
 export default function Hero() {
   return (
     <section className="py-16 md:px-11 lg:px-20 flex flex-col md:flex-row gap-12 md:gap-6 lg:gap-8">
-      <div className="flex-1 px-5">
+      <div className="flex-1 px-5 md:px-0">
         <h1 className="text-preset-2 lg:text-preset-1 mb-6">
           Maximize skill, minimize budget
         </h1>
