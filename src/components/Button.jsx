@@ -1,4 +1,4 @@
-export default function Button({ children, variant = "link" }) {
+export default function Button({ children, variant = "link", className = "" }) {
   const base = "text-preset-7 rounded-full";
   const variants = {
     link: "text-rose-400 hover:text-rose-300",
@@ -9,5 +9,9 @@ export default function Button({ children, variant = "link" }) {
       "py-4 px-8 text-white bg-gradient-to-b from-gradient2-start to-gradient2-end hover:opacity-60",
   };
 
-  return <button className={`${base} ${variants[variant]}`}>{children}</button>;
+  return (
+    <button className={`${base} ${variants[variant]} ${className}`}>
+      {children}
+    </button>
+  );
 }
